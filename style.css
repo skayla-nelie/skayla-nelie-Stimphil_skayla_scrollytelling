@@ -1,0 +1,510 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --title: #ff3535;
+  --btn-secondar: #ffffff;
+  --btn-seconda: #f8f9fa;
+  --btn-second: #6c757d;
+  --btn-secon: #495057;
+  --background: #343a40;
+  --backgroundOne: #000000;
+}
+
+@font-face {
+  src: url("../p2.2a/font/DePixelBreit.ttf") format("truetype");
+  font-family: "Pixel";
+}
+
+body {
+  margin: 0;
+  font-family: "Pixel";
+  overflow-x: hidden;
+}
+
+.scroll {
+  transform: rotate(270deg);
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../p2.2a/image/night.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: #f8f9fa;
+  text-align: center;
+}
+header h1 {
+  position: relative;
+  top: 15%;
+  color: var(--title);
+}
+header p {
+  position: relative;
+  top: 88%;
+  font-size: 11px;
+}
+header div {
+  position: relative;
+  top: 55%;
+  font-size: 30px;
+  color: var(--title);
+}
+
+header div img {
+  width: 70px;
+}
+
+.chapter {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  border: 1px solid red;
+  overflow: hidden;
+}
+
+/* CHAPTER 1 
+-Zoom dans la fenetre de la maison vers la chambre
+-Écriture qui arrive en même temps que le scroll
+*/
+#chapterOne {
+  position: relative;
+
+  background: url(../p2.2a/image/forest.svg) no-repeat 0 0;
+  background-position: 50% 100%;
+  background-size: cover;
+}
+.intro {
+  position: absolute;
+  top: 10%;
+  padding: 20px;
+  text-align: justify;
+  color: #f8f9fa;
+  font-size: xx-large;
+  font-family: "Pixel";
+  background-size: 100% 100%;
+  aspect-ratio: 1/1;
+  background-position: 0 0;
+  z-index: 2;
+}
+
+.houseBox {
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  background-size: 100% 100%;
+  aspect-ratio: 1/1;
+  background-position: 0 0;
+  background-image: url(image/house2.png);
+  max-width: 40vw;
+  z-index: 1;
+}
+
+/* CHAPTER 2 
+-en scrolant le "zzz" apparait
+-la respiration est automatique
+*/
+.sleepy {
+  position: absolute;
+  top: 15%;
+  left: 25%;
+  width: 50%;
+  padding: 25px;
+  text-align: justify;
+  color: #f8f9fa;
+  font-size: xx-large;
+  font-family: "Pixel";
+  background-size: 100% 100%;
+  aspect-ratio: 1/1;
+  background-position: 0 0;
+  z-index: 2;
+}
+#chapterTwo {
+  background: url(../p2.2a/image/bed.svg) no-repeat 0 0;
+  background-position: 50% 10%;
+  background-size: cover;
+}
+.zzz {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  background-image: url(../p2.2a/image/zzz.png);
+  background-repeat: no-repeat;
+  z-index: 1;
+  overflow: hidden;
+  width: 50vw;
+  height: 50vh;
+  aspect-ratio: 1/1;
+  animation-name: marche;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(33);
+  background-size: 100% -3300%;
+  animation-play-state: paused;
+}
+
+@keyframes marche {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -26400px;
+  }
+}
+
+body.is-scrolling .zzz {
+  animation-play-state: running;
+}
+
+@-webkit-keyframes marche {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -26400px;
+  }
+}
+@keyframes marche {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -26400px;
+  }
+}
+/* 700px * 37 images = 25900px OU pour responsive: 37*100% de largeur = 3700% */
+
+.bedroom {
+  position: absolute;
+  top: 47%;
+  left: 23%;
+  background-image: url(../p2.2a/image/sprite.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 1;
+  overflow: hidden;
+  width: 50vw;
+  aspect-ratio: 1/1;
+  animation-name: marche2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(2);
+}
+
+@keyframes marche2 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -1920px 0px;
+  }
+}
+
+/* CHAPTER 3 
+-la forme astral de andy apparait en scrollant
+-son corps passe de vivant a mort en scrollant
+*/
+#chapterThree {
+  background: url(../p2.2a/image/bed.svg) no-repeat 0 0;
+  background-position: 50% 10%;
+  background-size: cover;
+}
+
+.bedroom2 {
+  position: absolute;
+  top: 27%;
+  left: 23%;
+  background-image: url(../p2.2a/image/deadly.png);
+  background-repeat: no-repeat;
+  z-index: 1;
+  overflow: hidden;
+  width: 50vw;
+  aspect-ratio: 1/1;
+  animation-name: marche2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(2);
+  background-position: 3300% -20%;
+}
+@keyframes marche2 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -1920px 0px;
+  }
+}
+
+.ghost {
+  position: absolute;
+  top: 27%;
+  left: 23%;
+  background-image: url(../p2.2a/image/shock.png);
+  background-repeat: no-repeat;
+  z-index: 1;
+  overflow: hidden;
+  width: 50vw;
+  aspect-ratio: 1/1;
+  animation-name: marche2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(2);
+  background-position: 100% 0%;
+}
+@keyframes marche2 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -1920px 0px;
+  }
+}
+
+body.is-scrolling .ghost {
+  animation-play-state: running;
+}
+
+@-webkit-keyframes marche2 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -26400px;
+  }
+}
+@keyframes marche2 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -26400px;
+  }
+}
+/* CHAPTER 4 */
+#chapterFour {
+  background: url(../p2.2a/image/forest.svg) no-repeat 0 0;
+  background-position: 50% 100%;
+  background-size: cover;
+}
+.ghost5 img {
+  position: absolute;
+  top: 60%;
+  left: -20%;
+  z-index: 1;
+  width: 30%;
+  height: auto;
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  background-position: 100% 100%;
+  animation-direction: alternate;
+}
+
+body.is-scrolling .ghost5 img {
+  animation-play-state: running;
+}
+
+/* CHAPTER 5*/
+#chapterFive {
+  background: url(../p2.2a/image/forest.svg) no-repeat 0 0;
+  background-position: 50% 100%;
+  background-size: cover;
+}
+.ghost6 img {
+  position: absolute;
+  top: 60%;
+  left: -20%;
+  z-index: 1;
+  width: 30%;
+  height: auto;
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  background-position: 100% 100%;
+  animation-direction: alternate;
+}
+
+body.is-scrolling .ghost5 img {
+  animation-play-state: running;
+}
+
+.monster svg {
+  z-index: 1;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  width: 2000px;
+  animation-name: floatM;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  background-position: 100% 100%;
+  animation-direction: alternate;
+}
+@keyframes floatM {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(10%);
+  }
+}
+
+body.is-scrolling .monster img {
+  animation-play-state: running;
+}
+
+#monster {
+  visibility: hidden;
+}
+
+.monster {
+  position: absolute;
+  top: 50%;
+  left: -40%;
+  transform: scaleX(-1);
+}
+/* CHAPTER 6 */
+#chapterSix {
+  background: url(../p2.2a/image/forest.svg) no-repeat 0 0;
+  background-position: 50% 100%;
+  background-size: cover;
+}
+
+.ghost7 img {
+  position: absolute;
+  top: 60%;
+  left: -20%;
+  z-index: 1;
+  width: 30%;
+  height: auto;
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  background-position: 100% 100%;
+  animation-direction: alternate;
+}
+
+body.is-scrolling .ghost8 img {
+  animation-play-state: running;
+}
+
+.tunnel {
+  position: relative;
+  top: 89%;
+  left: 83%;
+  width: 20vw;
+  z-index: 1;
+}
+.tunnel img {
+  width: 130px;
+}
+/* CHAPTER 7 */
+#chapterSeven {
+  background: url(../p2.2a/image/underground.png) no-repeat 0 0;
+  background-position: 50% 100%;
+  background-size: cover;
+}
+.ghost8 img {
+  position: absolute;
+  top: -10%;
+  left: 74%;
+  z-index: 1;
+  width: 30%;
+  height: auto;
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  background-position: 100% 100%;
+  animation-direction: alternate;
+}
+
+body.is-scrolling .ghost8 img {
+  animation-play-state: running;
+}
+
+/* CHAPTER 8 */
+#chapterEigth {
+  background: url(../p2.2a/image/bed.svg) no-repeat 0 0;
+  background-position: 50% 10%;
+  background-size: cover;
+}
+.bedroom4 {
+  position: absolute;
+  top: 27%;
+  left: 23%;
+  background-image: url(../p2.2a/image/sprite.png);
+  background-repeat: no-repeat;
+  z-index: 1;
+  overflow: hidden;
+  width: 50vw;
+  aspect-ratio: 1/1;
+  animation-name: marche2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(2);
+  background-position: 3300% -20%;
+}
+@keyframes marche2 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -1920px 0px;
+  }
+}
+
+.ghost4 {
+  position: absolute;
+  top: -5%;
+  left: 23%;
+  background-image: url(../p2.2a/image/shock.png);
+  background-repeat: no-repeat;
+  z-index: 1;
+  overflow: hidden;
+  width: 50vw;
+  aspect-ratio: 1/1;
+  animation-name: marche3;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(2);
+  background-position: 100% 0%;
+  animation-play-state: paused;
+}
+
+body.is-scrolling .ghost {
+  animation-play-state: running;
+}
+
+@-webkit-keyframes marche3 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -26400px;
+  }
+}
+@keyframes marche3 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -26400px;
+  }
+}
+.sleepyEnd {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  width: 50%;
+  padding: 25px;
+  text-align: justify;
+  color: #f8f9fa;
+  font-size: xx-large;
+  font-family: "Pixel";
+  background-size: 100% 100%;
+  aspect-ratio: 1/1;
+  background-position: 0 0;
+  z-index: 2;
+}
