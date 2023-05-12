@@ -30,7 +30,7 @@ body {
 header {
   width: 100vw;
   height: 100vh;
-  background-image: url(../p2.2a/image/night.png);
+  background-image: url(image/night.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   color: #f8f9fa;
@@ -72,7 +72,7 @@ header div img {
 #chapterOne {
   position: relative;
 
-  background: url(../p2.2a/image/forest.svg) no-repeat 0 0;
+  background: url(image/forest.svg) no-repeat 0 0;
   background-position: 50% 100%;
   background-size: cover;
 }
@@ -122,7 +122,7 @@ header div img {
   z-index: 2;
 }
 #chapterTwo {
-  background: url(../p2.2a/image/bed.svg) no-repeat 0 0;
+  background: url(image/bed.svg) no-repeat 0 0;
   background-position: 50% 10%;
   background-size: cover;
 }
@@ -130,7 +130,7 @@ header div img {
   position: absolute;
   top: 15%;
   left: 15%;
-  background-image: url(../p2.2a/image/zzz.png);
+  background-image: url(image/zzz.png);
   background-repeat: no-repeat;
   z-index: 1;
   overflow: hidden;
@@ -180,7 +180,7 @@ body.is-scrolling .zzz {
   position: absolute;
   top: 47%;
   left: 23%;
-  background-image: url(../p2.2a/image/sprite.png);
+  background-image: url(image/sprite.png);
   background-repeat: no-repeat;
   background-position: 0 0;
   z-index: 1;
@@ -207,7 +207,7 @@ body.is-scrolling .zzz {
 -son corps passe de vivant a mort en scrollant
 */
 #chapterThree {
-  background: url(../p2.2a/image/bed.svg) no-repeat 0 0;
+  background: url(image/bed.svg) no-repeat 0 0;
   background-position: 50% 10%;
   background-size: cover;
 }
@@ -216,7 +216,7 @@ body.is-scrolling .zzz {
   position: absolute;
   top: 27%;
   left: 23%;
-  background-image: url(../p2.2a/image/deadly.png);
+  background-image: url(image/deadly.png);
   background-repeat: no-repeat;
   z-index: 1;
   overflow: hidden;
@@ -241,7 +241,7 @@ body.is-scrolling .zzz {
   position: absolute;
   top: 27%;
   left: 23%;
-  background-image: url(../p2.2a/image/shock.png);
+  background-image: url(image/shock.png);
   background-repeat: no-repeat;
   z-index: 1;
   overflow: hidden;
@@ -284,7 +284,7 @@ body.is-scrolling .ghost {
 }
 /* CHAPTER 4 */
 #chapterFour {
-  background: url(../p2.2a/image/forest.svg) no-repeat 0 0;
+  background: url(image/forest.svg) no-repeat 0 0;
   background-position: 50% 100%;
   background-size: cover;
 }
@@ -308,7 +308,7 @@ body.is-scrolling .ghost5 img {
 
 /* CHAPTER 5*/
 #chapterFive {
-  background: url(../p2.2a/image/forest.svg) no-repeat 0 0;
+  background: url(image/forest.svg) no-repeat 0 0;
   background-position: 50% 100%;
   background-size: cover;
 }
@@ -367,7 +367,7 @@ body.is-scrolling .monster img {
 }
 /* CHAPTER 6 */
 #chapterSix {
-  background: url(../p2.2a/image/forest.svg) no-repeat 0 0;
+  background: url(image/forest.svg) no-repeat 0 0;
   background-position: 50% 100%;
   background-size: cover;
 }
@@ -402,7 +402,7 @@ body.is-scrolling .ghost8 img {
 }
 /* CHAPTER 7 */
 #chapterSeven {
-  background: url(../p2.2a/image/underground.png) no-repeat 0 0;
+  background: url(image/underground.png) no-repeat 0 0;
   background-position: 50% 100%;
   background-size: cover;
 }
@@ -426,7 +426,7 @@ body.is-scrolling .ghost8 img {
 
 /* CHAPTER 8 */
 #chapterEigth {
-  background: url(../p2.2a/image/bed.svg) no-repeat 0 0;
+  background: url(image/bed.svg) no-repeat 0 0;
   background-position: 50% 10%;
   background-size: cover;
 }
@@ -434,7 +434,7 @@ body.is-scrolling .ghost8 img {
   position: absolute;
   top: 27%;
   left: 23%;
-  background-image: url(../p2.2a/image/sprite.png);
+  background-image: url(image/sprite.png);
   background-repeat: no-repeat;
   z-index: 1;
   overflow: hidden;
@@ -459,7 +459,7 @@ body.is-scrolling .ghost8 img {
   position: absolute;
   top: -5%;
   left: 23%;
-  background-image: url(../p2.2a/image/shock.png);
+  background-image: url(image/shock.png);
   background-repeat: no-repeat;
   z-index: 1;
   overflow: hidden;
