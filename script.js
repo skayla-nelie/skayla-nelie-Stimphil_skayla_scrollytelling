@@ -1,6 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(MotionPathPlugin);
-gsap.registerPlugin(MorphSVGPlugin);
+//gsap.registerPlugin(MotionPathPlugin);
+//gsap.registerPlugin(MorphSVGPlugin);
 
 gsap.fromTo(
   ".scrollDown",
